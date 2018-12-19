@@ -2,9 +2,9 @@
 
 
 ## Purpose
-The ibis4example project is meant as a starterkit for creating a new ibis applications. 
-## What is ibis
-An ibis is an application is an implementation of the IAF (Ibis Adapter Framework) and can be used to build backend applications or integration component wich will run on any java machine
+The ibis4template project is meant as a starter kit for creating a new ibis application. 
+## What is Ibis
+An ibis is an application is an implementation of the IAF (Ibis Adapter Framework) and can be used to build backend applications or integration component which will run on any Java machine.
 *******
 ## Getting started
 Eclipse
@@ -26,7 +26,7 @@ Eclipse
   Window, Preferences, Maven, User Settings, settings.xml should exist and contain proxy configuration.
 + Git  
   Window, Open Perspective, Other..., Git, OK,  
-  Clone a Git repository, URI: https://github.com/ibissource/ibis4example.git, Next, Next, Finish.
+  Clone a Git repository, URI: https://github.com/ibissource/ibis4template.git, Next, Next, Finish.
 + Install Server  
   If no servers are available. Click this link to create a new server...,  
   Apache, Tomcat v7.0 Server or higher, Next, Browse..., select the root folder of a Tomcat installation  
@@ -36,17 +36,17 @@ Eclipse
   Double click Tomcat v7.0 Server at localhost, Open launch configuration, Arguments, VM arguments, add ```-Dotap.stage=LOC```, OK  
   Next click Modules tab, Add Web Module..., iaf-example, OK, File, Save  
   Right click Tomcat v7.0 Server at localhost, Start.
-+ Start ibis4example on your local machine  
-  Open a webbrowser and goto [http://localhost:8080/ibis4example/](http://localhost:8080/ibis4example/) to check if ibis4example is running
++ Start ibis4template on your local machine  
+  Open a webbrowser and goto [http://localhost:8080/ibis4template/](http://localhost:8080/ibis4template/) to check if ibis4template is running
 
 ### Trouble shooting
 In some cases you might want/need to:
-- Rightclick ibis4example, Maven, Update Project..., OK.
+- Rightclick ibis4template, Maven, Update Project..., OK.
 - Enable Project, Build Automatically
 - Right click Tomcat v7.0 Server at localhost, Clean...
 - Change newlines in .classpath and org.eclipse.wst.common.component files
   back to Unix newlines.
-- Rightclick pom.xml (in ibis4example), Run As, Maven build..., JRE, make sure a JDK
+- Rightclick pom.xml (in ibis4template), Run As, Maven build..., JRE, make sure a JDK
   (not a JRE) is used, Refresh, Refresh resources upon completion,
 - The local Maven repository might contain corrupt jar files which for example
   will result in java.lang.NoClassDefFoundError:
@@ -61,8 +61,8 @@ Command-line interface
 
 Initial:
 
-- git clone https://github.com/ibissource/ibis4example
-- cd ibis4example
+- git clone https://github.com/ibissource/ibis4template
+- cd ibis4template
 - mvn
 - cd example
 - mvn jetty:run
