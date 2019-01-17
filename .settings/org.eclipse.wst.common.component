@@ -11,7 +11,7 @@
             <dependency-type>consumes</dependency-type>
         </dependent-module>
         <property name="context-root" value="ibis4template"/>
-        <property name="java-output-path" value="/ibis4example/target/classes"/>
+        <property name="java-output-path" value="/ibis4template/target/classes"/>
         <property name="component.exclusion.patterns"/>
     </wb-module>
 </project-modules>

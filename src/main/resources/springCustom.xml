@@ -41,7 +41,7 @@
 
 	<!--
 	Overwrite jndiDataSource bean to prevent:
-	javax.naming.NameNotFoundException: Name ibis4example is not bound in this Context
+	javax.naming.NameNotFoundException: Name ibis4template is not bound in this Context
 	-->
 	<bean name="jndiDataSource" class="java.lang.String"/>
 
