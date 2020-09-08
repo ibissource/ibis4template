@@ -6,9 +6,7 @@ The ibis4template project is meant as a starterkit for creating a new ibis appli
 ## What is ibis
 An ibis is an application is an implementation of the IAF (Ibis Adapter Framework) and can be used to build backend applications or integration component wich will run on any java machine
 *******
-## Getting started
-Eclipse
-=======
+## Getting started using Eclipse
 
 + Download and unzip  
   [Eclipse IDE for Java EE Developers] Select and download your favorite Eclipse version (http://eclipse.org/downloads/packages/)  
@@ -29,7 +27,7 @@ Eclipse
   Clone a Git repository, URI: https://github.com/ibissource/ibis4template.git, Next, Next, Finish.
 + Install Server  
   If no servers are available. Click this link to create a new server...,  
-  Apache, Tomcat v7.0 Server or higher, Next, Browse..., select the root folder of a Tomcat installation  
+  Apache, Tomcat v7.0 Server (or higher!), Next, Browse..., select the root folder of a Tomcat installation  
   (when not available download  [Tomcat](http://tomcat.apache.org/)  
   (version 7.0.22 is known to work, but other version are expected to work too)), OK, Finish.
 + Configure Server  
@@ -55,21 +53,3 @@ In some cases you might want/need to:
 - Sometimes the m2e tool crashes during the download resulting in corrupted overlays. You can resolve this by cleaning the target/m2e-wtp/overlays directory.
 
 *****
-
-Command-line interface
-======================
-
-Initial:
-
-- git clone https://github.com/ibissource/ibis4template
-- mvn package
-- mvn jetty:run
-- [http://localhost:8080/](http://localhost:8080/)
-
-
-After modifying a project file:
-
-- ctrl-c
-- cd .. ; mvn clean install ; cd example ; mvn jetty:run
-
-The jetty-maven-plugin requires Maven 3 and Java 1.7.
