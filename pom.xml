@@ -23,6 +23,24 @@
 			<version>${iaf.version}</version>
 			<type>war</type>
 		</dependency>
+
+		<!-- The dependencies on h2, dbcp and geronimo-jms are provided for convenience to avoid requiring them on the Tomcat classpath -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.3.162</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-jms_1.1_spec</artifactId>
+			<scope>runtime</scope>
+			<version>1.1</version>
+		</dependency>
 	
 	</dependencies>
 
